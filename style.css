@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Moon+Dance&family=Tangerine:wght@400;700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+}
+
+.navigation {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(232, 221, 221, 0.567);
+  position: relative;
+}
+
+.logo {
+  mix-blend-mode: darken;
+  height: 200px;
+}
+
+.features > li {
+  display: inline;
+  margin: 40px;
+  color: white;
+  list-style: none;
+  font-family: "Winky Rough", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact {
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: inset 3px 3px 4px rgba(5, 36, 211, 0.471),
+    3px 3px 4px rgba(5, 36, 211, 0.471);
+  color: rgb(5, 36, 211);
+  font-family: "Winky Rough", "sans-serif";
+  transition: ease 0.5s;
+}
+
+.contact:hover {
+  transform: scale(1.1);
+  background-color: rgb(5, 36, 211);
+  color: #ffffff;
+}
+
+.container1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/Copy\ of\ wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.fa-wand-magic-sparkles {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: rgb(5, 36, 211);
+  transition: ease 0.5s;
+}
+
+.fa-wand-magic-sparkles:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.main-header {
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  transition: ease 0.5s;
+  margin-bottom: 20px;
+}
+
+.main-header:hover {
+  transform: scale(1.1);
+  color: transparent;
+  -webkit-text-stroke: 3px #ffffff;
+  text-shadow: 1px 1px 16px #1a1a1a;
+}
+
+.content1 > p {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: overline;
+  text-shadow: 2px 2px 4px #1a1a1a;
+  transition: ease 0.5s;
+}
+
+.img1 {
+  height: 400px;
+  width: 400px;
+  border-radius: 400px;
+  transition: ease 0.5s;
+  margin-left: 2rem;
+}
+
+.img1:hover {
+  transform: scale(1.1);
+}
+
+.card-container {
+  height: 200vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(5, 36, 211),
+    rgb(5, 36, 211),
+    rgb(5, 36, 211),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+}
+
+.blog-header {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  transition: ease 0.5s;
+  color: #ffffff;
+}
+
+.blog-header:hover {
+  transform: scale(1.2);
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  text-shadow: 1px 1px 2px #ffffff;
+}
+
+.container2 {
+  height: 500px;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  height: 500px;
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #1a1a1a;
+  border-radius: 35px;
+  transition: ease 0.5s;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  filter: blur(5px) grayscale(0.7);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+}
+
+.card:hover {
+  width: 500px;
+  filter: blur(0) grayscale(0);
+}
+
+.card-content {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #1a1a1a;
+  width: 250px;
+  margin: 10px;
+  font-size: 15px;
+  transition: ease 0.5s;
+}
+
+.card-title {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #1a1a1a;
+  font-size: 2rem;
+  width: 200px;
+  margin: 10px;
+  z-index: 99;
+  position: relative;
+  transition: ease 0.5s;
+}
+
+.card-title:hover,
+.card-btn:hover,
+.card-content:hover {
+  transform: scale(1.2);
+}
+
+.card-btn {
+  margin: 20px;
+  height: 30px;
+  width: 150px;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+
+.card-btn:active {
+  background-color: #1a1a1a;
+}
+
+.container3 {
+  height: 100vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(images/Copy\ of\ female-travelers-waving-cars-road.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.query-container {
+  height: 500px;
+  width: 800px;
+  border-radius: 70px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-image: url(images/Copy\ of\ female-travelers-waving-cars-road.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: ease 0.5s;
+}
+
+.query-header {
+  font-size: 3rem;
+  color: #ffffff;
+  transition: ease 0.5s;
+}
+
+.query-content {
+  width: 500px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  transition: ease 0.5s;
+}
+
+.explore {
+  height: 30px;
+  width: 150px;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff;
+  transition: ease 0.5s;
+}
+
+.query-container:hover,
+.query-header:hover,
+.query-content:hover,
+.explore:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+.contact-info {
+  height: 100vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    #ffffff,
+    #ffffff,
+    rgb(5, 36, 211),
+    rgb(16, 16, 16)
+  );
+}
+
+.contact-container {
+  border-radius: 100px;
+  height: 500px;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(images/Copy\ of\ tourist-sitting-phu-sub-lek-viewpoint-sunset-lopburi-thailand.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 6px 6px 12px #fff, 6px 6px 12px #fff;
+  transition: ease 0.5s;
+}
+
+.form,
+.company-info {
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border-radius: 50px;
+  box-shadow: 4px 4px 8px #fff, inset 4px 4px 8px #1a1a1a;
+  transition: ease 0.5s;
+}
+
+.form-header {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #1a1a1a;
+}
+
+input {
+  background-color: #ffffff66;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #fff, inset 2px 2px 4px #1a1a1a;
+  transition: ease 0.5s;
+}
+
+.ques {
+  height: 50px;
+  width: 170px;
+}
+
+input::placeholder {
+  color: #1a1a1a;
+}
+
+.submit {
+  width: 170px;
+  color: #fff;
+  background-color: #1a1a1a96;
+  transition: ease 0.5s;
+}
+
+input:hover,
+.submit:hover,
+.info > li:hover {
+  transform: scale(1.1);
+}
+
+.submit:active {
+  color: #1a1a1a;
+  background-color: #fff;
+}
+
+.info {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.info > li {
+  list-style: none;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px #fff;
+  transition: ease 0.5s;
+}
+
+.footer {
+  height: 20px;
+  width: 100%;
+  background-color: rgb(16, 16, 16);
+  display: inline;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 675px) {
+  body {
+    height: 100%;
+    width: 600px;
+  }
+
+  .navigation {
+    height: 40px;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    height: 60px;
+    margin: 5px;
+  }
+
+  .features > li {
+    display: inline;
+    margin: 5px;
+    color: white;
+    list-style: none;
+    font-family: "Winky Rough", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 5px;
+  }
+
+  .contact {
+    height: 40px;
+    width: 70px;
+    font-size: 8px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ffffff;
+    box-shadow: inset 3px 3px 4px rgba(5, 36, 211, 0.471),
+      3px 3px 4px rgba(5, 36, 211, 0.471);
+    color: rgb(5, 36, 211);
+    font-family: "Winky Rough", "sans-serif";
+  }
+
+  .container1 {
+    height: 100vh;
+    width: 600px;
+    padding: 5px;
+  }
+
+  .fa-wand-magic-sparkles {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+  }
+
+  .main-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .content1 > p {
+    font-size: 15px;
+  }
+
+  .img1 {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+  }
+
+  .card-container {
+    height: 270vh;
+    width: 600px;
+    flex-direction: column;
+  }
+
+  .blog-header {
+    font-size: 3rem;
+    transform: translateY(200px);
+    color: black;
+  }
+
+  .container2 {
+    height: 250vh;
+    width: 500px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    height: 500px;
+    width: 400px;
+    justify-content: space-evenly;
+    filter: blur(0) grayscale(0);
+  }
+
+  .container3 {
+    height: 150vh;
+    width: 600px;
+  }
+
+  .query-container {
+    height: 400px;
+    width: 500px;
+    filter: grayscale(1);
+  }
+
+  .query-header {
+    font-size: 2.5rem;
+  }
+
+  .query-content {
+    width: 300px;
+    font-size: 15px;
+  }
+
+  .contact-info {
+    height: 150vh;
+    width: 600px;
+  }
+
+  .contact-container {
+    border-radius: 100px;
+    height: 800px;
+    width: 500px;
+    flex-direction: column;
+  }
+
+  .form,
+  .company-info {
+    height: 300px;
+    width: 300px;
+  }
+}
